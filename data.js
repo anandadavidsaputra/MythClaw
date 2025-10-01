@@ -33,7 +33,7 @@ const characters = [
       "Sang Pemelihara semesta, penjaga keseimbangan kosmik tanpa akhir.",
     tier: "SSR",
     file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/vishnu.png",
-    unlocked: true
+    unlocked: false
   },
   {
     name: "Amaterasu",
@@ -42,7 +42,7 @@ const characters = [
       "Dewi matahari Shinto, sinarnya menyingkirkan kegelapan dan menyalakan semangat.",
     tier: "SSR",
     file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/amaterasu.png",
-    unlocked: true
+    unlocked: false
   },
   {
     name: "Tiamat",
@@ -354,7 +354,7 @@ const characters = [
     description: "Burung raksasa petir, pencipta badai dan kehancuran.",
     tier: "B",
     file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/thunderbird.png",
-    unlocked: false
+    unlocked: true
   },
   {
     name: "Roc",
