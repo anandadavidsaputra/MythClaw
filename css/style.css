@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    background: #eee;
+}
+
+.game {
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+    height: 400px;
+    background: #ccc;
+    border: 5px solid #333;
+    overflow: hidden;
+}
+
+.claw {
+    position: absolute;
+    top: 0;
+    left: 130px;
+    width: 40px;
+    height: 40px;
+    background: silver;
+    border-radius: 50% 50% 0 0;
+    transition: top 0.5s;
+}
+
+.toy {
+    position: absolute;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background: pink;
+    border-radius: 50%;
+}
+
+.toy:nth-child(2) {
+    left: 50px;
+    background: yellow;
+}
+
+.toy:nth-child(3) {
+    left: 120px;
+    background: lightblue;
+}
+
+.toy:nth-child(4) {
+    left: 200px;
+    background: orange;
+}

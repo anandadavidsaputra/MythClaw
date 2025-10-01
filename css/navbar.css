@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-nav {
+    display: flex;
+    justify-content: center;
+    background: #a67c52;
+    border-bottom: 4px solid #5c3a14;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tab-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #fff8dc;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-right: 2px solid #5c3a14;
+    transition: all 0.3s ease;
+}
+
+.tab-nav a:last-child {
+    border-right: none;
+}
+
+.tab-nav a:hover {
+    background: #8b5a2b;
+    color: #ffd700;
+}
+
+.tab-nav a.active {
+    background: #5c3a14;
+    color: #ffd700;
+    box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.6);
+}

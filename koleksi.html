@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koleksi MythClaw</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/koleksi.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <div class="tab-nav">
+      <a href="index.html">Spin</a>
+      <a href="koleksi.html" class="active">Koleksi</a>
+      <a href="quest.html">Quest</a>
+    </div>
+
+    <div id="content-area">
+      <div id="koleksiContainer"></div>
+    </div>
+
+    <div id="modal">
+      <div id="modalContent" onclick="event.stopPropagation()">
+        <span class="close-btn">&times;</span>
+        <img id="modalImg" src="" alt="Gambar Karakter" />
+        <h2 id="modalName"></h2>
+        <p id="modalDesc"></p>
+        <p id="modalCulture"></p>
+        <p id="modalTier"></p>
+      </div>
+    </div>
+
+    <script src="data-dev.js"></script>
+    <script>
+      const TIER_COLORS = {
+        SSR: "#FFC72C",
+        SS: "#D93A3A",
+        S: "#A242E6",
+        A: "#3984E3",
+        B: "#6BBF5F",
+        C: "#888888",
+        D: "#8B4513",
+      };
+
+      const tierOrder = ["SSR", "SS", "S", "A", "B", "C", "D"];
+
+      if (typeof characters === "undefined" || !Array.isArray(characters)) {
+        document.getElementById("koleksiContainer").innerHTML =
+          "<p style='color:#a52a2a; text-align: center; font-size: 1.5em; font-family: \"Cinzel\", serif;'>Gagal memuat data karakter. Arsip telah lapuk dimakan usia.</p>";
+        throw new Error("Data 'characters' tidak ditemukan atau salah.");
+      }
+
+      const container = document.getElementById("koleksiContainer");
+      const modal = document.getElementById("modal");
+      const modalContent = document.getElementById("modalContent");
+      const modalImg = document.getElementById("modalImg");
+      const modalName = document.getElementById("modalName");
+      const modalDesc = document.getElementById("modalDesc");
+      const modalCulture = document.getElementById("modalCulture");
+      const modalTier = document.getElementById("modalTier");
+
+      modal.addEventListener("click", (e) => {
+        if (e.target.id === "modal") modal.classList.remove("show");
+      });
+
+      document.querySelector(".close-btn").addEventListener("click", () => {
+        modal.classList.remove("show");
+      });
+
+      function getTierColor(tier) {
+        return TIER_COLORS[tier.toUpperCase()] || TIER_COLORS.D;
+      }
+
+      function formatTitleCase(string) {
+        return string ? string.toUpperCase() : "";
+      }
+
+      function renderKoleksi() {
+        container.innerHTML = "";
+        const tiers = {};
+
+        characters.forEach((char) => {
+          const tierKey = char.tier ? char.tier.toUpperCase() : "D";
+          if (!tiers[tierKey]) tiers[tierKey] = [];
+          tiers[tierKey].push(char);
+        });
+
+        const sortedTiers = Object.keys(tiers).sort((a, b) => {
+          const indexA = tierOrder.indexOf(a);
+          const indexB = tierOrder.indexOf(b);
+          if (indexA === -1) return 1;
+          if (indexB === -1) return -1;
+          return indexA - indexB;
+        });
+
+        sortedTiers.forEach((tier) => {
+          const tierColor = getTierColor(tier);
+          const tierDiv = document.createElement("div");
+          tierDiv.className = "tier-group";
+
+          const tierTitleContainer = document.createElement("div");
+          tierTitleContainer.className = "tier-title-container";
+          tierTitleContainer.style.setProperty("--tier-color", tierColor);
+          tierTitleContainer.innerHTML = `
+            <span class="tier-title" style="color: ${tierColor};">${tier}</span>`;
+          tierDiv.appendChild(tierTitleContainer);
+
+          const tierContainer = document.createElement("div");
+          tierContainer.className = "tier-card-container";
+
+          tiers[tier].forEach((char) => {
+            const isLocked = !char.unlocked;
+            const charTierColor = getTierColor(char.tier);
+            const card = document.createElement("div");
+            card.className =
+              "card tier-" +
+              char.tier.toLowerCase() +
+              (isLocked ? " locked" : "");
+            card.style.setProperty("--tier-color-hover", charTierColor);
+
+            if (!isLocked) {
+              card.style.borderColor = charTierColor;
+              card.innerHTML = `
+                <div class="card-image-wrapper">
+                  <img src="${char.file}" alt="${char.name}" loading="lazy">
+                </div>
+                <h3>${formatTitleCase(char.name)}</h3>`;
+              card.addEventListener("click", () => {
+                modal.classList.add("show");
+                modalContent.style.border = `6px solid ${charTierColor}`;
+                modalContent.style.boxShadow = `0 0 40px ${charTierColor}80, 0 0 20px rgba(0, 0, 0, 0.9)`;
+                modalName.style.borderBottomColor = '#d1c8b7';
+                modalImg.src = char.file;
+                modalName.innerHTML = `<span style="color:${charTierColor};">${formatTitleCase(
+                  char.name
+                )}</span>`;
+                modalDesc.textContent =
+                  char.description ||
+                  "Teks prasasti ini telah lapuk, detailnya kini diselimuti misteri kuno.";
+                const cultureText = char.culture
+                  ? char.culture.toUpperCase()
+                  : "HILANG DARI SEJARAH";
+                modalCulture.innerHTML = `ASAL: <span style="color:${charTierColor};">${cultureText}</span>`;
+                modalTier.innerHTML = `TIER: <span style="color:${charTierColor};">${char.tier.toUpperCase()}</span>`;
+              });
+            } else {
+              card.innerHTML = `
+                <div class="card-image-wrapper">
+                  <img src="${char.file}" alt="Locked" loading="lazy">
+                </div>
+                <div class="locked-overlay">?</div>`;
+              const lockedImg = card.querySelector("img");
+              lockedImg.addEventListener("contextmenu", (e) => e.preventDefault());
+              lockedImg.addEventListener("dragstart", (e) => e.preventDefault());
+            }
+
+            tierContainer.appendChild(card);
+          });
+
+          tierDiv.appendChild(tierContainer);
+          container.appendChild(tierDiv);
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", renderKoleksi);
+    </script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
