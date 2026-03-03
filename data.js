@@ -6,7 +6,7 @@ const characters = [
       "Penguasa Olympus, dewa langit dan petir yang mengguncang dunia dengan kilat perkasa.",
     tier: "SSR",
     file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/zeus.png",
-    unlocked: true
+    unlocked: false
   },
   {
     name: "Odin",
