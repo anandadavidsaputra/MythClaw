@@ -1,49 +1,68 @@
-body {
-    text-align: center;
-    background: #eee;
+:root {
+  --gold-color: #b8860b;
+  --marble-color: #ffffff;
+  --dark-myth: #2c2117;
+  --accent-brown: #5c3a14;
 }
 
-.game {
+body {
+    margin: 0;
+    overflow: hidden; /* Sembunyikan scrollbar */
+    background-color: #001f3f; /* Warna latar belakang laut gelap */
+}
+
+.ocean {
     position: relative;
-    margin: 20px auto;
-    width: 300px;
-    height: 400px;
-    background: #ccc;
-    border: 5px solid #333;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
-.claw {
+.wave {
     position: absolute;
-    top: 0;
-    left: 130px;
-    width: 40px;
-    height: 40px;
-    background: silver;
-    border-radius: 50% 50% 0 0;
-    transition: top 0.5s;
+    bottom: 0;
+    left: 0;
+    width: 200%; /* Lebih lebar dari layar untuk efek looping */
+    height: 200px; /* Tinggi gelombang */
+    background: linear-gradient(to top, rgba(0, 100, 200, 0.8), rgba(0, 50, 100, 0.8)); /* Gradien warna gelombang */
+    border-radius: 50% 50% 0 0; /* Bentuk gelombang */
+    animation: waveAnimation 10s linear infinite; /* Animasi gelombang */
 }
 
-.toy {
-    position: absolute;
-    bottom: 10px;
-    width: 40px;
-    height: 40px;
-    background: pink;
-    border-radius: 50%;
+.wave:nth-child(2) {
+    animation-delay: -2s; /* Delay untuk variasi gelombang */
+    height: 180px;
+    opacity: 0.8;
+    background: linear-gradient(to top, rgba(0, 120, 240, 0.7), rgba(0, 60, 120, 0.7));
 }
 
-.toy:nth-child(2) {
-    left: 50px;
-    background: yellow;
+.wave:nth-child(3) {
+    animation-delay: -4s;
+    height: 220px;
+    opacity: 0.7;
+    background: linear-gradient(to top, rgba(0, 80, 160, 0.6), rgba(0, 40, 80, 0.6));
 }
 
-.toy:nth-child(3) {
-    left: 120px;
-    background: lightblue;
+.wave:nth-child(4) {
+    animation-delay: -6s;
+    height: 190px;
+    opacity: 0.9;
+    background: linear-gradient(to top, rgba(0, 110, 220, 0.9), rgba(0, 55, 110, 0.9));
 }
 
-.toy:nth-child(4) {
-    left: 200px;
-    background: orange;
+.wave:nth-child(5) {
+    animation-delay: -8s;
+    height: 210px;
+    opacity: 0.75;
+    background: linear-gradient(to top, rgba(0, 90, 180, 0.75), rgba(0, 45, 90, 0.75));
+}
+
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Geser ke kiri setengah dari lebar */
+    }
 }

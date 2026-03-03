@@ -1,9 +1,16 @@
+:root {
+    --gold-color: #b8860b;
+    --marble-color: #ffffff;
+    --dark-myth: #2c2117;
+    --accent-brown: #5c3a14;
+}
+
 body {
     font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
     color: #1a1a1a;
     box-sizing: border-box;
     margin: 0;
-    background-color: #ffffff;
+    background-color: var(--marble-color);
     background-image: none;
     position: static;
     overflow-x: hidden;
@@ -19,7 +26,7 @@ body::before {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0px 20px;
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -44,8 +51,8 @@ body::before {
     width: 100%;
     margin-bottom: 30px;
     padding: 15px 25px;
-    background-color: #2c2117;
-    border: 2px solid #b8860b;
+    background-color: var(--dark-myth);
+    border: 2px solid var(--gold-color);
     border-radius: 8px;
     box-sizing: border-box;
     text-align: left;
@@ -77,7 +84,7 @@ body::before {
 }
 
 .card {
-    background: #ffffff;
+    background: var(--marble-color);
     border-radius: 10px;
     padding: 5px;
     width: 100%;
@@ -99,9 +106,9 @@ body::before {
 .card:not(.locked):hover {
     transform: translateY(-8px) scale(1.03);
     z-index: 10;
-    border-color: var(--tier-color-hover);
-    box-shadow: 0 10px 20px var(--tier-color-hover) cc,
-        0 0 10px var(--tier-color-hover) aa;
+    border-color: var(var(--tier-color)-hover);
+    box-shadow: 0 10px 20px var(var(--tier-color)-hover) cc,
+        0 0 10px var(var(--tier-color)-hover) aa;
 }
 
 .card-image-wrapper {
@@ -112,7 +119,7 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--marble-color);
     border: none;
 }
 
@@ -172,7 +179,7 @@ body::before {
     justify-content: center;
     align-items: center;
     font-family: "Cinzel", serif;
-    color: #b8860b;
+    color: var(--gold-color);
     font-size: 6em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
@@ -193,7 +200,7 @@ body::before {
 }
 
 .close-btn:hover {
-    color: #b8860b;
+    color: var(--gold-color);
 }
 
 #modal {
@@ -291,7 +298,7 @@ body::before {
 @media (max-width: 768px) {
     @media (max-width: 768px) {
         #content-area {
-            padding: 20px 10px;
+            padding: 0px 10px;
             width: 100%;
         }
 
@@ -366,7 +373,7 @@ body::before {
 
 @media (max-width: 600px) {
     #content-area {
-        padding: 20px 10px;
+        padding: 0px 10px;
         width: 100%;
     }
 
