@@ -1,0 +1,4 @@
+nambah token tiap hari
+quest
+spin 10x
+validasi gabisa 10x
