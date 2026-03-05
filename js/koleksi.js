@@ -35,7 +35,7 @@ document.querySelector(".close-btn").addEventListener("click", () => {
 
 function syncUnlockStatus() {
   const savedProgress =
-    JSON.parse(localStorage.getItem("mythicClawProgress")) || {};
+    JSON.parse(localStorage.getItem("mythicClawProgressV1")) || {};
   characters.forEach((char) => {
     if (savedProgress[char.name]) char.unlocked = true;
   });
