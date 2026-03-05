@@ -1,49 +1,345 @@
-body {
-    text-align: center;
-    background: #eee;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel', 'Georgia', serif;
+  /* Font klasik sesuai koleksi */
 }
 
-.game {
-    position: relative;
-    margin: 20px auto;
-    width: 300px;
-    height: 400px;
-    background: #ccc;
-    border: 5px solid #333;
-    overflow: hidden;
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #2a113d, #05050a);
+  display: flex;
+  flex-direction: column;
+  /* Membuat navbar di atas, konten di bawah */
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   MACHINE CONTAINER
+   ========================================= */
+.machine {
+  margin: auto;
+  margin-top: 75px;
+  /* Memusatkan mesin secara vertikal di ruang sisa */
+  width: 340px;
+  text-align: center;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.2));
+  padding: 20px 0;
+}
+
+/* TEMPLE ROOF */
+.machine-roof {
+  position: relative;
+  height: 50px;
+  background: #1a1a24;
+  border-bottom: 4px solid #d4af37;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.roof-triangle {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 170px solid transparent;
+  border-right: 170px solid transparent;
+  border-bottom: 60px solid #1a1a24;
+}
+
+.roof-triangle::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -160px;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 54px solid #252535;
+}
+
+.roof-title {
+  color: #d4af37;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #d4af37;
+  z-index: 2;
+}
+
+/* =========================================
+   GLASS AREA & ANIMATIONS
+   ========================================= */
+.glass-area {
+  position: relative;
+  height: 380px;
+  background: linear-gradient(to bottom, #0f0f20, #2c1b4d);
+  border-left: 15px solid #2a2a35;
+  border-right: 15px solid #2a2a35;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  /* Penting untuk menyembunyikan capit saat di atas */
+}
+
+/* MOUNTAINS */
+.mountains {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+.mountain {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, #4a3b69, #1a1a24);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.m-back {
+  width: 100%;
+  height: 140px;
+  left: 0;
+  background: linear-gradient(to bottom, #302645, #111118);
+  z-index: 1;
+}
+
+.m-left {
+  width: 60%;
+  height: 100px;
+  left: -10%;
+  z-index: 2;
+}
+
+.m-right {
+  width: 70%;
+  height: 120px;
+  right: -15%;
+  background: linear-gradient(to bottom, #5d4a82, #1a1a24);
+  z-index: 3;
+}
+
+/* =========================================
+   CLAW & CHAIN (PERBAIKAN TALI TURUN)
+   ========================================= */
+.claw-container {
+  position: absolute;
+  top: -320px;
+  /* Sembunyi di atas atap saat awal */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 1s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+/* Tali/Rantai yang panjangnya tetap, tapi hanya terlihat saat container turun */
+.chain {
+  width: 5px;
+  height: 300px;
+  position: relative;
+  /* Rantai dibuat sangat panjang ke atas */
+  background:
+    linear-gradient(to right,
+      #423e3f,
+      /* Sisi kiri sangat gelap */
+      #4c4648,
+      /* Warna dasar kamu */
+      #3d3835,
+      /* Pantulan cahaya di tengah (lebih terang) */
+      #423e3f,
+      /* Kembali ke warna dasar */
+      #423e3f);
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  /* Bayangan halus di belakang tali */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: -2px;
+}
+
+/* Capit tepat di bawah rantai */
+.claw {
+  width: 80px;
+  margin-top: -2px;
+  /* Menghilangkan celah antara tali dan capit */
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
+  z-index: 101;
+}
+
+/* Penyesuaian Glass Area agar tali tidak bocor ke atas atap */
+.glass-area {
+  position: relative;
+  height: 380px;
+  background: linear-gradient(to bottom, #0f0f20, #2c1b4d);
+  border-left: 15px solid #2a2a35;
+  border-right: 15px solid #2a2a35;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  /* MEMOTONG tali yang berada di atas */
 }
 
 .claw {
-    position: absolute;
-    top: 0;
-    left: 130px;
-    width: 40px;
-    height: 40px;
-    background: silver;
-    border-radius: 50% 50% 0 0;
-    transition: top 0.5s;
+  width: 145px;
+  /* <--- UBAH INI (Misal: 80px jadi 100px agar lebih besar) */
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+  z-index: 100;
+  margin-left: -1.8px;
+  /* Menghilangkan celah dengan rantai */
 }
 
-.toy {
-    position: absolute;
-    bottom: 10px;
-    width: 40px;
-    height: 40px;
-    background: pink;
-    border-radius: 50%;
+/* OBJECT / ORB */
+.object {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, #e0f7fa, #00acc1);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease, bottom 0.5s ease;
+  box-shadow: 0 0 20px #00acc1, inset 0 0 10px #fff;
+  z-index: 4;
 }
 
-.toy:nth-child(2) {
-    left: 50px;
-    background: yellow;
+/* =========================================
+   MACHINE BASE & BUTTON
+   ========================================= */
+.machine-base {
+  background: #1a1a24;
+  padding: 20px;
+  border-top: 4px solid #d4af37;
+  border-radius: 0 0 12px 12px;
 }
 
-.toy:nth-child(3) {
-    left: 120px;
-    background: lightblue;
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to bottom, #d4af37, #997a00);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #554400, 0 0 15px rgba(212, 175, 55, 0.4);
+  transition: all 0.1s;
 }
 
-.toy:nth-child(4) {
-    left: 200px;
-    background: orange;
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #554400;
+}
+
+button:disabled {
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+/* =========================================
+   RESULT CARD (ACUAN: KOLEKSI.HTML)
+   ========================================= */
+.result-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 90%;
+  max-width: 380px;
+  padding: 25px;
+  background: #fcfcfc;
+  /* Warna kertas kuno/putih bersih seperti koleksi */
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  z-index: 2000;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+  color: #1a1a1a;
+}
+
+.result-card.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* Dekorasi Atas (NEW UNLOCK / DUPLICATE) */
+.card-decoration {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* Image Wrapper Sama dengan koleksi.css */
+.card-image-wrapper {
+  width: 100%;
+  height: 220px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+}
+
+.card-image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#cardName {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  margin: 10px 0;
+  border-bottom: 2px solid #d1c8b7;
+  padding-bottom: 5px;
+}
+
+#cardDesc {
+  font-family: 'Merriweather', serif;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+#cardCulture,
+#cardTier {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* Tombol Klaim */
+.claim-btn {
+  margin-top: 20px;
+  background: #2c2117;
+  color: #ffd700;
+  border: 2px solid #b8860b;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: 'Cinzel', serif;
+}
+
+/* Close button (X) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #888;
 }

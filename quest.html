@@ -4,21 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quest MythClaw</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <style>
+      .quest-container {
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+      }
+      .quest-item {
+        background: rgba(26, 26, 36, 0.8);
+        border: 2px solid #d4af37;
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 500px;
+        border-radius: 12px;
+      }
+      h1 { color: #d4af37; font-family: 'Georgia', serif; }
+    </style>
   </head>
   <body>
     <div class="tab-nav">
       <a href="index.html">Spin</a>
       <a href="koleksi.html">Koleksi</a>
-      <a href="quest.html" class="active">Quest</a>
+      <a href="quest.html">Quest</a>
     </div>
 
-    <h1>QUEST HARI INI GULINGKAN PEMERINT-</h1>
+    <div class="quest-container">
+      <h1>Misi Suci Hari Ini</h1>
+      <div class="quest-item">
+        <h3>Ntar dulu Developer siboek</h3>
+        <p>Lakukan 5x Sholat 5 waktu.</p>
+        <span style="color: #d4af37;">Status: Sedang Berjalan</span>
+      </div>
+    </div>
 
     <script src="js/navbar.js"></script>
   </body>
