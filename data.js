@@ -5,7 +5,7 @@ const characters = [
     description:
       "Penguasa Olympus, dewa langit dan petir yang mengguncang dunia dengan kilat perkasa.",
     tier: "SSR",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/zeus.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/zeus.webp",
     unlocked: false
   },
   {
@@ -14,7 +14,7 @@ const characters = [
     description:
       "Bapak Segala Asgard, mata bijak yang menembus takdir seluruh alam.",
     tier: "SSR",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/odin.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/odin.webp",
     unlocked: false
   },
   {
@@ -23,7 +23,7 @@ const characters = [
     description:
       "Sang Penghancur kosmik, menari di atas kehancuran untuk mencipta ulang semesta.",
     tier: "SSR",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/shiva.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/shiva.webp",
     unlocked: false
   },
   {
@@ -32,7 +32,7 @@ const characters = [
     description:
       "Sang Pemelihara semesta, penjaga keseimbangan kosmik tanpa akhir.",
     tier: "SSR",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/vishnu.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/vishnu.webp",
     unlocked: false
   },
   {
@@ -41,7 +41,7 @@ const characters = [
     description:
       "Dewi matahari Shinto, sinarnya menyingkirkan kegelapan dan menyalakan semangat.",
     tier: "SSR",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/amaterasu.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ssr/amaterasu.webp",
     unlocked: false
   },
   {
@@ -50,7 +50,7 @@ const characters = [
     description:
       "Naga purba Mesopotamia, Samudra Primal yang melahirkan kosmos dan ancaman yang membara.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/tiamat.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/tiamat.webp",
     unlocked: false
   },
   {
@@ -59,7 +59,7 @@ const characters = [
     description:
       "Kekosongan abadi Yunani, kehampaan tak berbatas yang darinya semua semesta lahir.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/chaos.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/chaos.webp",
     unlocked: false
   },
   {
@@ -68,7 +68,7 @@ const characters = [
     description:
       "Entitas kosmik tidur di dasar samudra, menunggu bangkit membawa kehancuran.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/cthulhu.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/cthulhu.webp",
     unlocked: false
   },
   {
@@ -76,7 +76,7 @@ const characters = [
     culture: "Jawa/Sunda",
     description: "Ratu Laut Selatan, penguasa ombak dan jiwa yang tersesat.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/nr_kidul.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/nr_kidul.webp",
     unlocked: false
   },
   {
@@ -85,7 +85,7 @@ const characters = [
     description:
       "Penguasa samudra, dewa laut dan gempa dengan trisula legendaris.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/poseidon.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/poseidon.webp",
     unlocked: false
   },
   {
@@ -94,7 +94,7 @@ const characters = [
     description:
       "Penguasa dunia bawah, pengendali kematian dan jiwa tak terhitung.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/hades.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/hades.webp",
     unlocked: false
   },
   {
@@ -102,7 +102,7 @@ const characters = [
     culture: "Jepang",
     description: "Dewa badai Jepang, pembawa perang dan penghancur naga.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/susanoo.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/susanoo.webp",
     unlocked: false
   },
   {
@@ -111,7 +111,7 @@ const characters = [
     description:
       "Penjaga Dunia Bawah Mesir, pengawas Timbangan Jiwa dan pemandu arwah.",
     tier: "SS",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/anubis.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/ss/anubis.webp",
     unlocked: false
   },
   {
@@ -119,7 +119,7 @@ const characters = [
     culture: "Mesir",
     description: "Matahari Mesir, pencipta dan penguasa cahaya abadi.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/ra.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/ra.webp",
     unlocked: false
   },
   {
@@ -127,7 +127,7 @@ const characters = [
     culture: "Nordik",
     description: "Dewa petir Nordik, pelindung manusia dengan palu Mjolnir.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/thor.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/thor.webp",
     unlocked: false
   },
   {
@@ -136,7 +136,7 @@ const characters = [
     description:
       "Dewi kebijaksanaan dan strategi perang, pemimpin para pejuang cerdas.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/athena.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/athena.webp",
     unlocked: false
   },
   {
@@ -145,7 +145,7 @@ const characters = [
     description:
       "Ular berbulu Aztek, dewa pencipta dan penguasa angin serta hujan.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/quetzalcoatl.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/quetzalcoatl.webp",
     unlocked: false
   },
   {
@@ -154,7 +154,7 @@ const characters = [
     description:
       "Versi Maya dari dewa ular berbulu, pengendali angin dan kesuburan bumi.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/kukulkan.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/kukulkan.webp",
     unlocked: false
   },
   {
@@ -163,7 +163,7 @@ const characters = [
     description:
       "Serigala raksasa Ragnarok, ancaman yang menghantui para dewa.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/fenrir.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/fenrir.webp",
     unlocked: false
   },
   {
@@ -171,7 +171,7 @@ const characters = [
     culture: "Hindu",
     description: "Burung raksasa suci, Vahana (Tunggangan) Dewa Wisnu yang menembus langit.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/garuda.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/garuda.webp",
     unlocked: false
   },
   {
@@ -179,7 +179,7 @@ const characters = [
     culture: "Jepang",
     description: "Dewa pencipta Shinto, penggali awal dunia dan kehidupan.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/izanagi.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/izanagi.webp",
     unlocked: false
   },
   {
@@ -187,7 +187,7 @@ const characters = [
     culture: "Mesir",
     description: "Penguasa kematian Mesir, simbol kebangkitan dan keadilan.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/osiris.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/osiris.webp",
     unlocked: false
   },
   {
@@ -195,7 +195,7 @@ const characters = [
     culture: "Mesir",
     description: "Dewa kekacauan dan gurun, pembawa badai dan konflik.",
     tier: "S",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/set.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/s/set.webp",
     unlocked: false
   },
   {
@@ -204,7 +204,7 @@ const characters = [
     description:
       "Dewi cinta dan sihir, penggoda sekaligus pelindung para pejuang.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/freyja.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/freyja.webp",
     unlocked: false
   },
   {
@@ -212,7 +212,7 @@ const characters = [
     culture: "Hindu",
     description: "Dewa kebijaksanaan berkepala gajah, penghalang rintangan.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/ganesha.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/ganesha.webp",
     unlocked: false
   },
   {
@@ -220,7 +220,7 @@ const characters = [
     culture: "Keltik",
     description: "Dewi perang dan nasib, pengendali takdir peperangan.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/morrigan.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/morrigan.webp",
     unlocked: false
   },
   {
@@ -228,7 +228,7 @@ const characters = [
     culture: "Aztek",
     description: "Dewa malam dan takdir, pengintai misteri kosmik.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/tezcatlipoca.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/tezcatlipoca.webp",
     unlocked: false
   },
   {
@@ -237,7 +237,7 @@ const characters = [
     description:
       "Dewa matahari utama, menyinari kerajaan Inka dengan kekuatan cahaya.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/inti.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/inti.webp",
     unlocked: false
   },
   {
@@ -245,7 +245,7 @@ const characters = [
     culture: "Maya",
     description: "Dewi bulan dan kesuburan, pengatur ritme alam dan kehidupan.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/ixchel.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/ixchel.webp",
     unlocked: false
   },
   {
@@ -253,7 +253,7 @@ const characters = [
     culture: "Indonesia (Bali)",
     description: "Penjaga Bali, simbol kebaikan yang menentang kegelapan.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/barong.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/barong.webp",
     unlocked: false
   },
   {
@@ -261,7 +261,7 @@ const characters = [
     culture: "Indonesia (Jawa)",
     description: "Dewi padi dan kesuburan, penguasa panen dan kemakmuran.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/dewi_sri.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/dewi_sri.webp",
     unlocked: false
   },
   {
@@ -269,7 +269,7 @@ const characters = [
     culture: "Aztek",
     description: "Dewi pembersih dosa, penguasa rahasia gelap manusia.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/tlazolteotl.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/tlazolteotl.webp",
     unlocked: false
   },
   {
@@ -277,7 +277,7 @@ const characters = [
     culture: "Mesir",
     description: "Pemakan jiwa orang berdosa, ancaman bagi mereka yang lalim.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/ammit.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/ammit.webp",
     unlocked: false
   },
   {
@@ -286,7 +286,7 @@ const characters = [
     description:
       "Dewa perang dan pelindung samurai, pengendali keberanian dan taktik.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/hachiman.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/hachiman.webp",
     unlocked: false
   },
   {
@@ -294,7 +294,7 @@ const characters = [
     culture: "Tiongkok",
     description: "Makhluk bijak ensiklopedia roh, pengetahuan tanpa batas.",
     tier: "A",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/bai_ze.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/a/bai_ze.webp",
     unlocked: false
   },
   {
@@ -302,7 +302,7 @@ const characters = [
     culture: "Yunani",
     description: "Anjing penjaga gerbang Hades, penjaga jiwa-jiwa terkutuk.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/cerberus.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/cerberus.webp",
     unlocked: false
   },
   {
@@ -311,7 +311,7 @@ const characters = [
     description:
       "Ular banyak kepala yang sulit ditundukkan, simbol kekuatan regeneratif.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/hydra.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/hydra.webp",
     unlocked: false
   },
   {
@@ -319,7 +319,7 @@ const characters = [
     culture: "Yunani",
     description: "Monster manusia berkepala banteng, penguasa labirin gelap.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/minotaur.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/minotaur.webp",
     unlocked: false
   },
   {
@@ -327,7 +327,7 @@ const characters = [
     culture: "Mesir",
     description: "Penjaga teka-teki, penguji jiwa dengan misteri abadi.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/sphinx.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/sphinx.webp",
     unlocked: false
   },
   {
@@ -336,7 +336,7 @@ const characters = [
     description:
       "Monster singa-kambing-ular, ancaman mengerikan bagi petualang.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/chimera.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/chimera.webp",
     unlocked: false
   },
   {
@@ -345,7 +345,7 @@ const characters = [
     description:
       "Monster laut raksasa, pengguncang samudra yang menelan kapal.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/kraken.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/kraken.webp",
     unlocked: false
   },
   {
@@ -353,7 +353,7 @@ const characters = [
     culture: "Amerika Utara",
     description: "Burung raksasa petir, pencipta badai dan kehancuran.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/thunderbird.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/thunderbird.webp",
     unlocked: false
   },
   {
@@ -362,7 +362,7 @@ const characters = [
     description:
       "Burung raksasa legenda, pengendali angin dan kekuatan langit.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/roc.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/roc.webp",
     unlocked: false
   },
   {
@@ -370,7 +370,7 @@ const characters = [
     culture: "Eropa",
     description: "Singa berkepala elang, simbol kekuatan dan kewaspadaan.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/griffin.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/griffin.webp",
     unlocked: false
   },
   {
@@ -378,7 +378,7 @@ const characters = [
     culture: "Eropa",
     description: "Raja ular mematikan, tatapan yang membeku lawan.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/basilisk.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/basilisk.webp",
     unlocked: false
   },
   {
@@ -387,7 +387,7 @@ const characters = [
     description:
       "Raksasa bermata satu, penggali tambang dan kekuatan luar biasa.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/cyclops.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/cyclops.webp",
     unlocked: false
   },
   {
@@ -395,7 +395,7 @@ const characters = [
     culture: "Arab",
     description: "Jin api kuat dan berbahaya, pembawa kobaran neraka.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/ifrit.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/ifrit.webp",
     unlocked: false
   },
   {
@@ -403,7 +403,7 @@ const characters = [
     culture: "Himalaya",
     description: "Manusia salju legenda, penguasa gunung es dan salju.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/yeti.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/yeti.webp",
     unlocked: false
   },
   {
@@ -411,7 +411,7 @@ const characters = [
     culture: "Eropa",
     description: "Dragon klasik, penguasa langit dan legenda kekuatan.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/naga_eropa.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/naga_eropa.webp",
     unlocked: false
   },
   {
@@ -419,7 +419,7 @@ const characters = [
     culture: "Indonesia (Bali)",
     description: "Ratu sihir pemakan manusia, pengacau malam dan teror.",
     tier: "B",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/rangda.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/b/rangda.webp",
     unlocked: false
   },
   {
@@ -427,7 +427,7 @@ const characters = [
     culture: "Jepang",
     description: "Rubah berekor sembilan, penipu licik yang memanipulasi jiwa.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/kitsune.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/kitsune.webp",
     unlocked: false
   },
   {
@@ -435,7 +435,7 @@ const characters = [
     culture: "Jepang",
     description: "Monster sungai nakal, pengintai manusia di tepi air.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/kappa.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/kappa.webp",
     unlocked: false
   },
   {
@@ -443,7 +443,7 @@ const characters = [
     culture: "Jepang",
     description: "Kucing berekor dua, pengendali roh dan ilusi.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/nekomata.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/nekomata.webp",
     unlocked: false
   },
   {
@@ -451,7 +451,7 @@ const characters = [
     culture: "Nordik",
     description: "Prajurit mayat hidup, penjaga makam kuno.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/draugr.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/draugr.webp",
     unlocked: false
   },
   {
@@ -460,7 +460,7 @@ const characters = [
     description:
       "Wanita hutan berekor sapi, penggoda sekaligus pemburu manusia.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/huldra.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/huldra.webp",
     unlocked: false
   },
   {
@@ -469,7 +469,7 @@ const characters = [
     description:
       "Pembawa jiwa pejuang, penentu siapa yang layak surga pertempuran.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/valkyrie.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/valkyrie.webp",
     unlocked: false
   },
   {
@@ -477,7 +477,7 @@ const characters = [
     culture: "Yunani",
     description: "Pusaran laut raksasa, menelan kapal tanpa ampun.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/charybdis.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/charybdis.webp",
     unlocked: false
   },
   {
@@ -485,7 +485,7 @@ const characters = [
     culture: "Yunani",
     description: "Kuda bersayap, lambang kecepatan dan kebebasan langit.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/pegasus.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/pegasus.webp",
     unlocked: false
   },
   {
@@ -493,7 +493,7 @@ const characters = [
     culture: "Yunani",
     description: "Wanita bersayap penculik, pembawa malapetaka dari langit.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/harpy.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/harpy.webp",
     unlocked: false
   },
   {
@@ -501,7 +501,7 @@ const characters = [
     culture: "Tiongkok",
     description: "Mayat hidup melompat, pemburu jiwa di malam hari.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/jiangshi.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/jiangshi.webp",
     unlocked: false
   },
   {
@@ -509,7 +509,7 @@ const characters = [
     culture: "Tiongkok",
     description: "Makhluk pembawa keberuntungan, penjaga keseimbangan dunia.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/qilin.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/qilin.webp",
     unlocked: false
   },
   {
@@ -517,7 +517,7 @@ const characters = [
     culture: "Amerika Utara",
     description: "Roh kanibal kelaparan, penjelajah hutan gelap.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/wendigo.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/wendigo.webp",
     unlocked: false
   },
   {
@@ -526,7 +526,7 @@ const characters = [
     description:
       "Wanita laut shapeshifter, penyelamat nelayan atau pembawa malapetaka.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/selkie.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/selkie.webp",
     unlocked: false
   },
   {
@@ -534,7 +534,7 @@ const characters = [
     culture: "Brasil",
     description: "Lumba-lumba shapeshifter, perayu yang muncul dari sungai.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/encantado.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/encantado.webp",
     unlocked: false
   },
   {
@@ -542,7 +542,7 @@ const characters = [
     culture: "Melayu",
     description: "Roh kecil pemujaan darah, pengganggu rahasia manusia.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/polong.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/polong.webp",
     unlocked: false
   },
   {
@@ -550,7 +550,7 @@ const characters = [
     culture: "Jawa",
     description: "Api gaib berwujud roh, penebar ketakutan malam hari.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/banaspati.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/banaspati.webp",
     unlocked: false
   },
   {
@@ -558,7 +558,7 @@ const characters = [
     culture: "Filipina",
     description: "Monster penghisap darah, pengintai malam di desa.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/aswang.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/aswang.webp",
     unlocked: false
   },
   {
@@ -566,7 +566,7 @@ const characters = [
     culture: "Meksiko",
     description: "Hantu wanita menangis, pencari anak-anak hilang.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/la_llorona.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/la_llorona.webp",
     unlocked: false
   },
   {
@@ -574,7 +574,7 @@ const characters = [
     culture: "Thailand",
     description: "Roh pemakan organ, pengintai mayat di malam hari.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/phi_pop.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/phi_pop.webp",
     unlocked: false
   },
   {
@@ -582,7 +582,7 @@ const characters = [
     culture: "Yahudi",
     description: "Makhluk tanah liat hidup, pelindung komunitas dari bahaya.",
     tier: "C",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/golem.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/c/golem.webp",
     unlocked: false
   },
   {
@@ -590,7 +590,7 @@ const characters = [
     culture: "Indonesia",
     description: "Hantu wanita baju putih panjang, rambut panjang menakutkan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kuntilanak.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kuntilanak.webp",
     unlocked: false
   },
   {
@@ -598,7 +598,7 @@ const characters = [
     culture: "Indonesia",
     description: "Raksasa berbulu hutan, penguasa malam dan kegelapan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/genderuwo.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/genderuwo.webp",
     unlocked: false
   },
   {
@@ -607,7 +607,7 @@ const characters = [
     description:
       "Roh kepala terbang pemakan janin, penyebar teror dan malapetaka di malam hari.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/palasik.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/palasik.webp",
     unlocked: false
   },
   {
@@ -616,7 +616,7 @@ const characters = [
     description:
       "Roh wanita terbang dengan organ tubuh menggantung, pembawa penyakit.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/penanggalan.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/penanggalan.webp",
     unlocked: false
   },
   {
@@ -624,7 +624,7 @@ const characters = [
     culture: "Indonesia",
     description: "Jasad mistis kecil, menghisap energi kehidupan manusia.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/jenglot.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/jenglot.webp",
     unlocked: false
   },
   {
@@ -633,7 +633,7 @@ const characters = [
     description:
       "Makhluk kerdil pembawa sial, penggoda manusia dengan janji palsu dan pembuat onar di kegelapan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/goblin.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/goblin.webp",
     unlocked: false
   },
   {
@@ -641,7 +641,7 @@ const characters = [
     culture: "Peru",
     description: "Dragon ular kosmik, penguasa langit dan bumi.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/amaru.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/amaru.webp",
     unlocked: false
   },
   {
@@ -649,7 +649,7 @@ const characters = [
     culture: "Filipina",
     description: "Naga laut menelan bulan, ancaman gelap dari laut dalam.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/bakunawa.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/bakunawa.webp",
     unlocked: false
   },
   {
@@ -657,7 +657,7 @@ const characters = [
     culture: "Jepang",
     description: "Roh pemakan mimpi buruk, pelindung tidur manusia.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/baku.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/baku.webp",
     unlocked: false
   },
   {
@@ -665,7 +665,7 @@ const characters = [
     culture: "Jepang",
     description: "Ayam api legendaris, membakar musuh dengan semburan api.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/basan.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/basan.webp",
     unlocked: false
   },
   {
@@ -673,7 +673,7 @@ const characters = [
     culture: "Aztek",
     description: "Manusia-kelawar dewa malam, pengintai kegelapan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/camazotz.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/camazotz.webp",
     unlocked: false
   },
   {
@@ -681,7 +681,7 @@ const characters = [
     culture: "Keltik",
     description: "Dewa rusa hutan, pengendali alam liar.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/cernunnos.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/cernunnos.webp",
     unlocked: false
   },
   {
@@ -689,7 +689,7 @@ const characters = [
     culture: "Peru",
     description: "Roh hutan dengan kaki satu, penipu pejalan hutan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/chullachaqui.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/chullachaqui.webp",
     unlocked: false
   },
   {
@@ -697,7 +697,7 @@ const characters = [
     culture: "Skotlandia",
     description: "Rubah besar hijau legendaris, penjaga hutan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/cu_sith.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/cu_sith.webp",
     unlocked: false
   },
   {
@@ -705,7 +705,7 @@ const characters = [
     culture: "Fiji",
     description: "Naga laut pelindung pesisir, penjaga nelayan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/dakuwaqa.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/dakuwaqa.webp",
     unlocked: false
   },
   {
@@ -713,7 +713,7 @@ const characters = [
     culture: "Polandia",
     description: "Roh wanita hutan, penyesat yang menarik manusia ke dalam bahaya.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/dziwozona.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/dziwozona.webp",
     unlocked: false
   },
   {
@@ -721,7 +721,7 @@ const characters = [
     culture: "Nordik",
     description: "Raksasa penggiling, pembawa kekuatan dan bencana.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/fenja_menja.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/fenja_menja.webp",
     unlocked: false
   },
   {
@@ -729,7 +729,7 @@ const characters = [
     culture: "Skotlandia",
     description: "Roh hutan kecil berbulu, pelindung pepohonan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/ghillie_dhu.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/ghillie_dhu.webp",
     unlocked: false
   },
   {
@@ -737,7 +737,7 @@ const characters = [
     culture: "Melanesia (Solomon)",
     description: "Naga berkepala banyak, penjaga harta dan rimba.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/hatuibwari.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/hatuibwari.webp",
     unlocked: false
   },
   {
@@ -745,7 +745,7 @@ const characters = [
     culture: "Nordik",
     description: "Raksasa burung pemakan angin, pengendali badai langit.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/hraesvelgr.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/hraesvelgr.webp",
     unlocked: false
   },
   {
@@ -753,7 +753,7 @@ const characters = [
     culture: "Finlandia",
     description: "Monster laut, penguasa perairan gelap.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/iku_turso.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/iku_turso.webp",
     unlocked: false
   },
   {
@@ -761,7 +761,7 @@ const characters = [
     culture: "Nordik",
     description: "Ular dunia, pengikat samudra dan bumi.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/jormungandr.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/jormungandr.webp",
     unlocked: false
   },
   {
@@ -769,7 +769,7 @@ const characters = [
     culture: "Jepang",
     description: "Weasel pemotong angin, pembawa luka misterius.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kamaitachi.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kamaitachi.webp",
     unlocked: false
   },
   {
@@ -777,7 +777,7 @@ const characters = [
     culture: "Angola",
     description: "Manusia-hewan dua wajah, predator air dan darat.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kishi.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kishi.webp",
     unlocked: false
   },
   {
@@ -785,7 +785,7 @@ const characters = [
     culture: "Hindu",
     description: "Monster laut hibrida, penjaga sungai dan laut.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/makara.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/makara.webp",
     unlocked: false
   },
   {
@@ -793,7 +793,7 @@ const characters = [
     culture: "Persia",
     description: "Lion-man-monster ekor duri, pemburu yang mematikan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/manticore.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/manticore.webp",
     unlocked: false
   },
   {
@@ -802,7 +802,7 @@ const characters = [
     description:
       "Kuda air shapeshifter Skotlandia, memikat dan menarik korbannya ke dasar danau.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kelpie.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/kelpie.webp",
     unlocked: false
   },
   {
@@ -810,7 +810,7 @@ const characters = [
     culture: "Nigeria",
     description: "Dewi sungai dan cinta, pelindung air dan kesuburan.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/oshun.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/oshun.webp",
     unlocked: false
   },
   {
@@ -818,7 +818,7 @@ const characters = [
     culture: "Amerika Utara",
     description: "Naga berkepala elang, penjaga langit dan legenda suku.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/piasa.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/piasa.webp",
     unlocked: false
   },
   {
@@ -827,7 +827,7 @@ const characters = [
     description:
       "Burung besar bijak, lambang kebijaksanaan dan pelindung dunia.",
     tier: "D",
-    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/simurgh.png",
+    file: "https://raw.githubusercontent.com/anandadavidsaputra/mythclaw-characters/main/d/simurgh.webp",
     unlocked: false
   },
 ];
