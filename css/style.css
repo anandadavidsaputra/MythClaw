@@ -25,7 +25,8 @@ body {
   width: 340px;
   text-align: center;
   filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.2));
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 /* TEMPLE ROOF */
@@ -186,11 +187,9 @@ body {
 
 .claw {
   width: 145px;
-  /* <--- UBAH INI (Misal: 80px jadi 100px agar lebih besar) */
   filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
   z-index: 100;
   margin-left: -1.8px;
-  /* Menghilangkan celah dengan rantai */
 }
 
 /* OBJECT / ORB */
@@ -502,4 +501,13 @@ button:disabled {
   font-size: 0.7rem;
   color: #fff;
   margin: 3px 0 0 0;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;        
+  margin-bottom: 40px;    
 }

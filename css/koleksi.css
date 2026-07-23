@@ -80,7 +80,6 @@ body {
     align-items: center;
     cursor: pointer;
     border: 2px solid #4a3728;
-    /* Frame kayu gelap */
 }
 
 /* Hover Effect: Glow sesuai warna tier */
@@ -339,4 +338,14 @@ body {
     background: #111;
     color: #fff;
     font-size: 0.8rem;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  margin-top: -40px;        
+  margin-bottom: 40px;    
 }
