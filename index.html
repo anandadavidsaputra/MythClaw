@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mythic Claw Machine - Spin</title>
+    <title>Myth Claw Machine - Spin</title>
+    <link rel="icon" type="image/webp" href="assets/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
   </head>
@@ -14,10 +15,12 @@
       <a href="quest.html">Quest</a>
     </div>
 
+    <div class="token-bar">🎟️ Token: <span class="token-count">0</span></div>
+
     <div class="machine">
       <div class="machine-roof">
         <div class="roof-triangle"></div>
-        <div class="roof-title">MYTHIC CLAW</div>
+        <div class="roof-title">MYTH CLAW</div>
       </div>
 
       <div class="glass-area">
@@ -30,7 +33,15 @@
 
         <div class="claw-container">
           <div class="chain"></div>
-          <img src="assets/claw.png" class="claw" alt="claw" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <img
+            src="assets/claw.png"
+            class="claw"
+            alt="claw"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'block';
+            "
+          />
         </div>
 
         <div class="object">
@@ -39,27 +50,62 @@
       </div>
 
       <div class="machine-base">
-        <button id="gachaBtn">SUMMON</button>
+        <div class="btn-container">
+          <button id="gachaBtn">SPIN 1x (1🎟️)</button>
+          <button id="gacha10Btn" style="background: #a242e6">
+            SPIN 10x (10🎟️)
+          </button>
+        </div>
       </div>
     </div>
 
-   <div class="result-card" id="resultCard">
-    <span class="close-btn" onclick="document.getElementById('resultCard').classList.remove('show')">&times;</span>
-    <div class="card-decoration" id="cardDecoration">✨ NEW UNLOCK! ✨</div>
-    
-    <div class="card-image-wrapper">
+    <!-- Modal Hasil Single Spin -->
+    <div class="result-card" id="resultCard">
+      <span
+        class="close-btn"
+        onclick="document.getElementById('resultCard').classList.remove('show')"
+        >&times;</span
+      >
+      <div class="card-decoration" id="cardDecoration">✨ NEW UNLOCK! ✨</div>
+      <div class="card-image-wrapper">
         <img id="cardImg" src="" alt="Karakter" />
+      </div>
+      <h2 id="cardName"></h2>
+      <p id="cardDesc"></p>
+      <p id="cardCulture"></p>
+      <p id="cardTier"></p>
+      <button
+        class="claim-btn"
+        onclick="document.getElementById('resultCard').classList.remove('show')"
+      >
+        KLAIM
+      </button>
     </div>
-    
-    <h2 id="cardName"></h2>
-    <p id="cardDesc"></p>
-    <p id="cardCulture"></p>
-    <p id="cardTier"></p>
-    
-    <button class="claim-btn" onclick="document.getElementById('resultCard').classList.remove('show')">KLAIM</button>
-</div>
+
+    <!-- Modal Hasil Multi Spin (10x) -->
+    <div class="result-card" id="multiResultCard">
+      <span
+        class="close-btn"
+        onclick="
+          document.getElementById('multiResultCard').classList.remove('show')
+        "
+        >&times;</span
+      >
+      <h2>✨ HASIL 10x SUMMON ✨</h2>
+      <div class="multi-results" id="multiResultsContainer"></div>
+      <button
+        class="claim-btn"
+        onclick="
+          document.getElementById('multiResultCard').classList.remove('show')
+        "
+        style="margin-top: 15px"
+      >
+        KLAIM ALL
+      </button>
+    </div>
 
     <script src="data.js"></script>
+    <script src="js/tokenManager.js"></script>
     <script src="js/script.js"></script>
     <script src="js/navbar.js"></script>
   </body>

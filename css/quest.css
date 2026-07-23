@@ -1,0 +1,73 @@
+.quest-container {
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+}
+
+.quest-card {
+    background: rgba(26, 26, 36, 0.9);
+    border: 2px solid #d4af37;
+    margin: 20px auto;
+    padding: 12px 18px;
+    max-width: 480px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.quest-info h3 {
+    margin: 0;
+    color: #d4af37;
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+}
+
+.quest-info p {
+    margin: 3px 0 0;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.quest-btn {
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Cinzel", serif;
+    min-width: 100px;
+    font-size: 0.8rem;
+}
+
+.quest-btn:disabled {
+    background: #444;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.token-bar {
+    font-family: "Cinzel", serif;
+    color: #ffd700;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 10px auto;
+    border: 1px solid #ffd700;
+}
+
+.summary-input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #d4af37;
+    background: #111;
+    color: #fff;
+    font-size: 0.8rem;
+}

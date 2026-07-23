@@ -1,44 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quest MythClaw</title>
+    <title>Myth Claw Machine - Misi Harian</title>
+    <link rel="icon" type="image/webp" href="assets/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <style>
-      .quest-container {
-        padding: 40px 20px;
-        text-align: center;
-        color: white;
-      }
-      .quest-item {
-        background: rgba(26, 26, 36, 0.8);
-        border: 2px solid #d4af37;
-        margin: 20px auto;
-        padding: 20px;
-        max-width: 500px;
-        border-radius: 12px;
-      }
-      h1 { color: #d4af37; font-family: 'Georgia', serif; }
-    </style>
+    <link rel="stylesheet" href="css/quest.css">
   </head>
   <body>
     <div class="tab-nav">
       <a href="index.html">Spin</a>
       <a href="koleksi.html">Koleksi</a>
-      <a href="quest.html">Quest</a>
+      <a href="quest.html" class="active">Quest</a>
     </div>
 
     <div class="quest-container">
-      <h1>Misi Suci Hari Ini</h1>
-      <div class="quest-item">
-        <h3>Ntar dulu Developer siboek</h3>
-        <p>Lakukan 5x Sholat 5 waktu.</p>
-        <span style="color: #d4af37;">Status: Sedang Berjalan</span>
+      <div class="token-bar">
+        🎟️ Token Kamu: <span class="token-count">0</span>
+      </div>
+
+      <!-- 1. ABSEN -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>1. Check-in Harian</h3>
+          <p>Login hari ini & klaim token gratis.</p>
+        </div>
+        <button class="quest-btn" id="q1" onclick="claimQ1()">KLAIM 5🎟️</button>
+      </div>
+
+      <!-- 2. MAKAN TEPAT WAKTU -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>2. Makan Tepat Waktu</h3>
+          <p>Sudah makan siang / makan malam?</p>
+        </div>
+        <button class="quest-btn" id="q2" onclick="claimQ2()">SUDAH 5🎟️</button>
+      </div>
+
+      <!-- 3. HIDRASI -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>3. Hidrasi Tubuh</h3>
+          <p>Minum air putih. (<span id="waterCount">0</span>/5 Gelas)</p>
+        </div>
+        <button class="quest-btn" id="q3" onclick="claimQ3()">
+          MINUM (+1🎟️)
+        </button>
+      </div>
+
+      <!-- 4. PEREGANGAN -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>4. Peregangan Badan</h3>
+          <p>Berdiri/jalan 10 detik. (<span id="stretchTimer">10s</span>)</p>
+        </div>
+        <button class="quest-btn" id="q4" onclick="startQ4()">
+          MULAI (10s)
+        </button>
+      </div>
+
+      <!-- 5. TARGET HARI INI -->
+      <div
+        class="quest-card"
+        style="flex-direction: column; align-items: flex-start"
+      >
+        <div class="quest-info" style="width: 100%">
+          <h3>5. Target Hari Ini</h3>
+          <p>Tulis 1 hal yang ingin kamu selesaikan (min. 3 kata):</p>
+          <input
+            type="text"
+            id="inputQ5"
+            class="summary-input"
+            placeholder="Contoh: Selesai tugas koding..."
+            oninput="checkQ5()"
+          />
+        </div>
+        <button
+          class="quest-btn"
+          id="q5"
+          disabled
+          onclick="claimQ5()"
+          style="margin-top: 6px; align-self: flex-end"
+        >
+          KLAIM 5🎟️
+        </button>
+      </div>
+
+      <!-- 6. ISTIRAHAT MATA -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>6. Istirahat Layar</h3>
+          <p>
+            Tatap objek jauh selama 15 detik. (<span id="eyeTimer">15s</span>)
+          </p>
+        </div>
+        <button class="quest-btn" id="q6" onclick="startQ6()">
+          MULAI (15s)
+        </button>
+      </div>
+
+      <!-- 7. REFLEKSI POSITIF -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>7. Refleksi Positif</h3>
+          <p>Sudah tersenyum/bersyukur hari ini?</p>
+        </div>
+        <button class="quest-btn" id="q7" onclick="claimQ7()">SUDAH 5🎟️</button>
+      </div>
+
+     <!-- 8. MEMBANTU SESEORANG -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>8. Membantu Seseorang</h3>
+          <p>Sudah membantu teman, keluarga, atau orang lain hari ini?</p>
+        </div>
+        <button class="quest-btn" id="q8" onclick="claimQ8()">SUDAH 5🎟️</button>
+      </div>
+
+      <!-- 9. HIHIRAN UDARA (Napas Dalam) -->
+      <div class="quest-card">
+        <div class="quest-info">
+          <h3>9. Tarik Napas Dalam</h3>
+          <p>Tarik napas dan rileks selama 8 detik. (<span id="breathTimer">8s</span>)</p>
+        </div>
+        <button class="quest-btn" id="q9" onclick="startQ9()">MULAI (8s)</button>
+      </div>
+
+      <!-- 10. EVALUASI DIRI -->
+      <div
+        class="quest-card"
+        style="flex-direction: column; align-items: flex-start"
+      >
+        <div class="quest-info" style="width: 100%">
+          <h3>10. Catatan Kebaikan</h3>
+          <p>Tulis 1 hal baik yang sudah kamu lakukan (min. 3 kata):</p>
+          <input
+            type="text"
+            id="inputQ10"
+            class="summary-input"
+            placeholder="Contoh: Membantu teman, cuci piring..."
+            oninput="checkQ10()"
+          />
+        </div>
+        <button
+          class="quest-btn"
+          id="q10"
+          disabled
+          onclick="claimQ10()"
+          style="margin-top: 6px; align-self: flex-end"
+        >
+          KLAIM 5🎟️
+        </button>
       </div>
     </div>
 
+    <script src="js/tokenManager.js"></script>
     <script src="js/navbar.js"></script>
+    <script>
+      const today = getTodayString();
+
+      // Q1: Check-in
+      function claimQ1() {
+        addTokens(5);
+        localStorage.setItem("q1_" + today, "true");
+        document.getElementById("q1").disabled = true;
+        document.getElementById("q1").textContent = "SELESAI";
+      }
+
+      // Q2: Makan
+      function claimQ2() {
+        addTokens(5);
+        localStorage.setItem("q2_" + today, "true");
+        document.getElementById("q2").disabled = true;
+        document.getElementById("q2").textContent = "SELESAI";
+      }
+
+      // Q3: Minum Air (5 Gelas)
+      function claimQ3() {
+        let cnt = parseInt(localStorage.getItem("q3_cnt_" + today)) || 0;
+        if (cnt < 5) {
+          cnt++;
+          addTokens(1);
+          localStorage.setItem("q3_cnt_" + today, cnt);
+          document.getElementById("waterCount").textContent = cnt;
+          if (cnt >= 5) {
+            document.getElementById("q3").disabled = true;
+            document.getElementById("q3").textContent = "SELESAI";
+          }
+        }
+      }
+
+      // Q4: Peregangan (Timer 10s)
+      function startQ4() {
+        let sec = 10;
+        const btn = document.getElementById("q4");
+        btn.disabled = true;
+        const timer = setInterval(() => {
+          if (document.hidden) {
+            alert("Jangan ganti tab!");
+          } else {
+            sec--;
+            document.getElementById("stretchTimer").textContent = sec + "s";
+            if (sec <= 0) {
+              clearInterval(timer);
+              addTokens(5);
+              localStorage.setItem("q4_" + today, "true");
+              btn.textContent = "SELESAI";
+            }
+          }
+        }, 1000);
+      }
+
+      // Q5: Target
+      function checkQ5() {
+        const txt = document.getElementById("inputQ5").value.trim();
+        const count = txt ? txt.split(/\s+/).length : 0;
+        if (!localStorage.getItem("q5_" + today)) {
+          document.getElementById("q5").disabled = count < 3;
+        }
+      }
+      function claimQ5() {
+        addTokens(5);
+        localStorage.setItem("q5_" + today, "true");
+        document.getElementById("q5").disabled = true;
+        document.getElementById("q5").textContent = "SELESAI";
+      }
+
+      // Q6: Istirahat Layar (Timer 15s)
+      function startQ6() {
+        let sec = 15;
+        const btn = document.getElementById("q6");
+        btn.disabled = true;
+        const timer = setInterval(() => {
+          if (document.hidden) {
+            alert("Jangan ganti tab!");
+          } else {
+            sec--;
+            document.getElementById("eyeTimer").textContent = sec + "s";
+            if (sec <= 0) {
+              clearInterval(timer);
+              addTokens(5);
+              localStorage.setItem("q6_" + today, "true");
+              btn.textContent = "SELESAI";
+            }
+          }
+        }, 1000);
+      }
+
+      // Q7: Refleksi Positif
+      function claimQ7() {
+        addTokens(5);
+        localStorage.setItem("q7_" + today, "true");
+        document.getElementById("q7").disabled = true;
+        document.getElementById("q7").textContent = "SELESAI";
+      }
+
+      // Q8: Rapikan Meja
+      function claimQ8() {
+        addTokens(5);
+        localStorage.setItem("q8_" + today, "true");
+        document.getElementById("q8").disabled = true;
+        document.getElementById("q8").textContent = "SELESAI";
+      }
+
+      // Q9: Tarik Napas (Timer 8s)
+      function startQ9() {
+        let sec = 8;
+        const btn = document.getElementById("q9");
+        btn.disabled = true;
+        const timer = setInterval(() => {
+          if (document.hidden) {
+            alert("Jangan ganti tab!");
+          } else {
+            sec--;
+            document.getElementById("breathTimer").textContent = sec + "s";
+            if (sec <= 0) {
+              clearInterval(timer);
+              addTokens(5);
+              localStorage.setItem("q9_" + today, "true");
+              btn.textContent = "SELESAI";
+            }
+          }
+        }, 1000);
+      }
+
+      // Q10: Catatan Kebaikan
+      function checkQ10() {
+        const txt = document.getElementById("inputQ10").value.trim();
+        const count = txt ? txt.split(/\s+/).length : 0;
+        if (!localStorage.getItem("q10_" + today)) {
+          document.getElementById("q10").disabled = count < 3;
+        }
+      }
+      function claimQ10() {
+        addTokens(5);
+        localStorage.setItem("q10_" + today, "true");
+        document.getElementById("q10").disabled = true;
+        document.getElementById("q10").textContent = "SELESAI";
+      }
+
+      // Load Status saat halaman dibuka
+      document.addEventListener("DOMContentLoaded", () => {
+        if (localStorage.getItem("q1_" + today)) {
+          document.getElementById("q1").disabled = true;
+          document.getElementById("q1").textContent = "SELESAI";
+        }
+        if (localStorage.getItem("q2_" + today)) {
+          document.getElementById("q2").disabled = true;
+          document.getElementById("q2").textContent = "SELESAI";
+        }
+
+        const wCnt = parseInt(localStorage.getItem("q3_cnt_" + today)) || 0;
+        document.getElementById("waterCount").textContent = wCnt;
+        if (wCnt >= 5) {
+          document.getElementById("q3").disabled = true;
+          document.getElementById("q3").textContent = "SELESAI";
+        }
+
+        if (localStorage.getItem("q4_" + today)) {
+          document.getElementById("q4").disabled = true;
+          document.getElementById("q4").textContent = "SELESAI";
+        }
+        if (localStorage.getItem("q5_" + today)) {
+          document.getElementById("q5").disabled = true;
+          document.getElementById("q5").textContent = "SELESAI";
+        }
+        if (localStorage.getItem("q6_" + today)) {
+          document.getElementById("q6").disabled = true;
+          document.getElementById("q6").textContent = "SELESAI";
+        }
+        if (localStorage.getItem("q7_" + today)) {
+          document.getElementById("q7").disabled = true;
+          document.getElementById("q7").textContent = "SELESAI";
+        }
+        if (localStorage.getItem("q8_" + today)) {
+          document.getElementById("q8").disabled = true;
+          document.getElementById("q8").textContent = "SELESAI";
+        }
+        if (localStorage.getItem("q9_" + today)) {
+          document.getElementById("q9").disabled = true;
+          document.getElementById("q9").textContent = "SELESAI";
+        }
+        if (localStorage.getItem("q10_" + today)) {
+          document.getElementById("q10").disabled = true;
+          document.getElementById("q10").textContent = "SELESAI";
+        }
+      });
+    </script>
   </body>
 </html>
